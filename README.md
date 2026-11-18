@@ -11,7 +11,8 @@
 </p>
 <p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
 <p align="center">
-  <a href="#build-from-source"><strong>Build from source</strong></a> ·
+  <a href="https://github.com/ProvenceJake/copilotbridge/releases/download/v1.0.0/CopilotBridge-1.0.0-arm64.dmg"><strong>Download for Apple Silicon</strong></a> ·
+  <a href="#build-from-source">Build from source</a> ·
   <a href="#connect-a-client">Client setup</a> ·
   <a href="CHANGELOG.md">Changelog (Chinese)</a> ·
   <a href="https://github.com/ProvenceJake/copilotbridge/issues">Report an issue</a>
@@ -29,6 +30,12 @@ CopilotBridge runs a local HTTP server for clients that support **OpenAI Chat Co
 | Local API | Menu bar controls | Credential storage |
 | --- | --- | --- |
 | Chat Completions, Responses, Messages, and model discovery. Streaming, image inputs, and tool calls depend on the model and protocol. | Sign in, start or stop the server, and see the available models and reported quota. | The server listens on loopback. Model requests use a generated local key. The key and long-lived GitHub token are stored in macOS Keychain. |
+
+## Install from DMG
+
+Download the [Apple Silicon DMG](https://github.com/ProvenceJake/copilotbridge/releases/download/v1.0.0/CopilotBridge-1.0.0-arm64.dmg), open it, and drag CopilotBridge to Applications. The app requires macOS 14 or later. The DMG contains an ad-hoc signed build without Apple notarization, so Gatekeeper may block it on another Mac.
+
+The [SHA-256 checksum](https://github.com/ProvenceJake/copilotbridge/releases/download/v1.0.0/CopilotBridge-1.0.0-arm64.dmg.sha256) and verification command are available in the [v1.0.0 release notes](https://github.com/ProvenceJake/copilotbridge/releases/tag/v1.0.0).
 
 ## Connect a client
 

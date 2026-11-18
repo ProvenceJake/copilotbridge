@@ -11,7 +11,8 @@
 </p>
 <p align="center"><a href="README.md">English</a> · <strong>简体中文</strong></p>
 <p align="center">
-  <a href="#从源码构建"><strong>从源码构建</strong></a> ·
+  <a href="https://github.com/ProvenceJake/copilotbridge/releases/download/v1.0.0/CopilotBridge-1.0.0-arm64.dmg"><strong>下载 Apple 芯片版</strong></a> ·
+  <a href="#从源码构建">从源码构建</a> ·
   <a href="#连接客户端">客户端配置</a> ·
   <a href="CHANGELOG.md">更新记录</a> ·
   <a href="https://github.com/ProvenceJake/copilotbridge/issues">反馈问题</a>
@@ -29,6 +30,12 @@ CopilotBridge 在本机运行 HTTP 服务，供支持 **OpenAI Chat Completions*
 | 本地 API | 菜单栏操作 | 凭据存储 |
 | --- | --- | --- |
 | 支持 Chat Completions、Responses、Messages 和模型发现。流式响应、图片输入和工具调用取决于模型及协议。 | 登录、启停服务，并查看当前账号可用的模型及 GitHub 返回的额度。 | 服务仅监听本机回环地址，模型请求使用自动生成的本地密钥。本地密钥和长期 GitHub 令牌保存在 macOS 钥匙串。 |
+
+## 安装 DMG
+
+下载 [Apple 芯片版 DMG](https://github.com/ProvenceJake/copilotbridge/releases/download/v1.0.0/CopilotBridge-1.0.0-arm64.dmg)，打开后将 CopilotBridge 拖入「应用程序」。应用要求 macOS 14 或更新版本。安装包采用 ad-hoc 签名，未通过 Apple 公证，因此 Gatekeeper 可能会阻止它在其他 Mac 上启动。
+
+[1.0.0 发布说明](https://github.com/ProvenceJake/copilotbridge/releases/tag/v1.0.0)附有 [SHA-256 校验文件](https://github.com/ProvenceJake/copilotbridge/releases/download/v1.0.0/CopilotBridge-1.0.0-arm64.dmg.sha256)和校验命令。
 
 ## 连接客户端
 
